@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <style>
+      .cv-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      @media (max-width: 768px) {
+        .cv-section {
+          width: calc(50% - 40px); /* Adjust the width for smaller screens */
+        }
+      }
+      body {
+        font-family: "Courier New", monospace;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #c3b1e1;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+      }
+
+      nav li {
+        margin: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #000000;
+      }
+      h3 {
+        color: #333;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .cv-section {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%; /* Set the width to 50% to center the content */
+        float: left;
+      }
+
+      .cv-heading {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .cv-subheading {
+        font-size: 20px;
+        color: #666;
+      }
+      .cv-subheading-passion {
+        font-size: 30px;
+        color: #666;
+      }
+
+      .cv-education {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%;
+        float: left;
+      }
+
+      .cv-courses {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%;
+        float: left;
+      }
+      .cv-languages {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%;
+        float: left;
+      }
+      .cv-programing {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%;
+        float: left;
+      }
+      .cv-passion {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(248, 200, 220, 0.7);
+        width: 43%;
+        float: left;
+      }
+      .button-container {
+        position: absolute;
+        left: 50%;
+        buttom: 20%;
+        transform: translateX(-50%);
+      }
+      .button {
+        border-color: #ffd1dc;
+        color: white;
+        padding: 20px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #ffd1dc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="prezentare.html">Home</a></li>
+        <li><a href="myCV.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cv-container">
+      <div class="cv-section">
+        <h2 class="cv-heading">Sumar {</h2>
+        <p class="cv-subheading">
+          Sunt o persoană pasionată de informatică și sunt dornică să-mi extind
+          cunoștințele în acest domeniu. În prezent îmi ocup timpul cu
+          acumularea a cât mai multe cunoștințe legate de crearea și dezvoltarea
+          aplicațiilor și jocurilor.
+        </p>
+        <h2 class="cv-heading">}</h2>
+      </div>
+
+      <div class="cv-education">
+        <h2 class="cv-heading">Educație {</h2>
+        <p class="cv-subheading">
+          - Colegiul National Eudoxiu Hurmuzachi (2018-2022)
+        </p>
+        <p class="cv-subheading">
+          - Universitatea Politehnica București Facultatea de Automatica si
+          Calculatoare, Ingineria Sistemelor (2022 - Prezent)
+        </p>
+        <h2 class="cv-heading">}</h2>
+      </div>
+
+      <div class="cv-languages">
+        <h2 class="cv-heading">Limbi Cunoscute {</h2>
+        <p class="cv-subheading">Română ● ● ● ● ●</p>
+        <p class="cv-subheading">Engleză ● ● ● ● ○</p>
+        <p class="cv-subheading">Spaniolă ● ● ● ○ ○</p>
+        <p class="cv-subheading">Franceză ● ○ ○ ○ ○</p>
+
+        <h2 class="cv-heading">}</h2>
+      </div>
+
+      <div class="cv-programing">
+        <h2 class="cv-heading">Limbaje De Programare {</h2>
+        <p class="cv-subheading">C ● ● ● ○ ○</p>
+        <p class="cv-subheading">C++ ● ● ● ○ ○</p>
+        <p class="cv-subheading">Python ● ● ○ ○ ○</p>
+        <p class="cv-subheading">Java ● ● ● ○ ○</p>
+        <p class="cv-subheading">Kotlin ● ● ○ ○ ○</p>
+
+        <h2 class="cv-heading">}</h2>
+      </div>
+
+      <div class="cv-passion">
+        <h2 class="cv-heading">Hobbies {</h2>
+        <p class="cv-subheading-passion">
+          🌎&nbsp &nbsp🏋&nbsp &nbsp👨‍💻&nbsp &nbsp🎧&nbsp &nbsp✈️&nbsp &nbsp🛍️
+        </p>
+
+        <h2 class="cv-heading">}</h2>
+      </div>
+      <div class="cv-courses">
+        <h2 class="cv-heading">Cursuri {</h2>
+        <p class="cv-subheading">Java Programming Masterclass</p>
+        <p class="cv-subheading">Responsive Web Design</p>
+        <h2 class="cv-heading">}</h2>
+      </div>
+    </div>
+    <div class="button-container">
+      <a href="myCV.html" download="myCV.html">
+        <button class="button">Descarcă CV (HTML)</button></a
+      >
+    </div>
+  </body>
+</html>

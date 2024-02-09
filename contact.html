@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #c3b1e1;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+      }
+
+      nav li {
+        margin: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #000000;
+      }
+      h2 {
+        font-family: courier;
+        font-size: 30px;
+        text-align: center;
+      }
+      h3 {
+        color: #333;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .contact-form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgb(248, 200, 220);
+        width: 50%;
+      }
+
+      .form-style {
+        display: block;
+        width: 95%;
+        height: 16px;
+        padding: 10px 12px;
+        border: 2px solid #edc5e4;
+        color: #000;
+        border-radius: 10px;
+        margin: auto;
+        background-clip: padding-box;
+        background-color: #fff0f5;
+      }
+
+      .text-area {
+        height: 80px;
+        width: 95%;
+        padding: 10px 12px;
+        margin: auto;
+        cursor: pointer;
+        border: 2px solid #edc5e4;
+        color: #000;
+        border-radius: 15px;
+        background-color: #fff0f5;
+      }
+
+      .text-style {
+        font-size: 120%;
+        margin: auto;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .button {
+        border-color: #ffd1dc;
+        color: white;
+        padding: 20px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #ffd1dc;
+      }
+
+      .select-style {
+        font-size: 100%;
+        width: 100%;
+        height: 16px;
+        padding: 10px 12px;
+        border: 2px solid #edc5e4;
+        border-radius: 10px;
+        background-color: #fff0f5;
+        color: #000000;
+      }
+
+      .dropdown {
+        width: 100%;
+        height: 15px;
+        padding: 10px 12px;
+        border: 2px solid #edc5e4;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="prezentare.html">Home</a></li>
+        <li><a href="myCV.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 style="font-size: 30px; text-align: center">
+      <b>Formular de contact:</b>
+    </h1>
+
+    <div class="column">
+      <div class="contact-form">
+        <form
+          action="mailto:toiaemilia853@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="fname" class="text-style">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="John"
+            class="form-style"
+          /><br /><br />
+
+          <label for="lname" class="text-style">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Smith"
+            class="form-style"
+          /><br /><br />
+
+          <label for="email" class="text-style">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="johnsmith@gmail.com"
+            required
+            class="form-style"
+          /><br /><br />
+
+          <label for="country" class="text-style">Country:</label>
+          <select id="country" name="country" class="select-style" required>
+            <option value="Romania">Romania</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Spain">Spain</option>
+            <option value="Japan">Japan</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+
+          <label for="subject" class="text-style">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject.."
+            required
+            class="form-style"
+          /><br /><br />
+
+          <label for="body" class="text-style">Message:</label><br />
+          <textarea
+            id="body"
+            name="body"
+            rows="4"
+            required
+            class="text-area"
+            placeholder="Message..."
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Send" class="button" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
